@@ -1,0 +1,381 @@
+.container {
+  margin: 0 auto;
+  width: 375px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: #1E213F;
+}
+
+h1 {
+  color: #D7E0FF;
+  margin-bottom: 45px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.77px;
+}
+
+.tabs {
+  background-color: #161932;
+  width: 327px;
+  padding: 8px 6px;
+  border-radius: 40px;
+  margin-bottom: 48px;
+}
+
+.tabs button {
+  padding: 7px 16px;
+  border-radius: 40px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.88px;
+  text-align: center;
+  color: #1E213F;
+  background-color: #161932;
+  border: 2px solid #161932;
+  color: #D7E0FF;
+}
+
+.tabs button.active {
+  border: 2px solid #F87070;
+  background-color: #F87070;
+  color: #1E213F;
+}
+
+.ModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ModalContent {
+  padding: 24px 0px;
+  width: 327px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  text-align: center;
+}
+
+hr {
+ width: 327px;
+ margin: 0 auto;
+ border: 1px solid #E3E1E1;
+ margin-bottom: 24px;
+}
+
+.ModalContent h1 {
+  font-size: 24px;
+  color: #333;
+  padding: 0px 24px;
+  text-align: left;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.8px;
+  color: #161932;
+  margin-bottom: 24px; 
+}
+
+.ModalContent h2 {
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 13.64px;
+  letter-spacing: 4.230769157409668px;
+  text-align: center;
+  color: #161932;
+  margin-bottom: 18px;
+}
+
+.SetTimeItems {
+  padding: 0px 24px;
+  margin-bottom: 24px;
+  h5 {
+    color: #1E213F40;
+  }
+}
+
+.SetTimeItem {
+  display: flex;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.88px;
+  text-align: left;
+  color: #1E213F;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  align-items: center;
+}
+
+input {
+  padding: 10px 3px;
+  font-size: 8px;
+  border: 2px solid #EFF1FA;
+  background-color: #EFF1FA;
+  border-radius: 10px;
+  margin-right: 10px;
+  width: 140px;
+}
+
+.Fonts {
+  margin-bottom: 24px;
+  button {
+    width: 40px;
+    border-radius: 50%;
+    padding: 9px 10px;
+    background-color: #EFF1FA;
+    border: 2px solid #EFF1FA;
+  }
+}
+
+.Btns {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.Colors {
+  button {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 7px 10px;
+    background-color: #EFF1FA;
+    border: 2px solid #EFF1FA;
+    color: #EFF1FA;
+  }
+}
+
+.ApplyBtn {
+  background-color: #F87070;
+  padding: 17px 47px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.84px;
+  text-align: center;
+  color: #FFFFFF;
+  border: 2px solid #F87070;
+  border-radius: 50px;
+  position: relative;
+  top: 45px;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.closeBtn:hover {
+  background-color: #d93636;
+}
+
+.Colors button {
+  border-radius: 50%;
+}
+
+.container.font1 {
+  font-family: 'Arial', sans-serif;
+}
+
+.container.font2 {
+  font-family: 'Times New Roman', serif;
+}
+
+.container.font3 {
+  font-family: 'Courier New', monospace;
+}
+
+.Btns button.active {
+  border: 2px solid #161932;
+  background-color: #161932;
+  color: #FFFFFF;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tabs.font1 button {
+  font-family: 'Arial', sans-serif;
+}
+
+.tabs.font2 button {
+  font-family: 'Times New Roman', serif;
+}
+
+.tabs.font3 button {
+  font-family: 'Courier New', monospace;
+}
+
+.StartRestartBtns.font1 button {
+  font-family: 'Arial', sans-serif;
+}
+
+.progress-container {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 120px;
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+}
+
+.progress-ring__circle {
+  margin: 0 auto;
+  transition: stroke-dashoffset 0.35s;
+  transform: rotate(0.25turn);
+  transform-origin: 50% 50%;
+  background-color: #161932;
+  color: #F87070;
+}
+
+.progress-content {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.progress-content h1 {
+  margin: 0;
+  font-size: 2rem;
+  margin-bottom: 19px;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 124.02px;
+  letter-spacing: -5px;
+  text-align: center;
+}
+
+.progress-button {
+  padding: 5px 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.84px;
+  letter-spacing: 15px;
+  text-align: center;
+  background: unset;
+  border: unset;
+  color: #D7E0FF;
+}
+
+.progress-background {
+  transform-origin: 50% 50%;
+  color: #161932;
+}
+
+@media(width >= 768px) {
+  .container {
+    width: 768px;
+    margin: auto;
+  }
+
+  .ModalContent {
+    width: 540px;
+    h2 {
+      text-align: left;
+      padding: 24px 40px;
+    }
+  }
+
+  .SetTimeItems {
+    display: flex;
+    gap: 10px;
+  }
+
+  .SetTimeItem {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    row-gap: 20px;
+  }
+
+  .SetTimeItem h5 {
+    color: #1E213F40;
+  }
+
+  hr {
+    width: 540px;
+    margin: 0 auto;
+    border: 1px solid #E3E1E1;
+    margin-bottom: 24px;
+  }
+
+  .Fonts {
+    display: flex;
+    padding: 0px 42px;
+    align-items: baseline;
+    gap: 270px;
+    h2 {
+      padding: 0;
+    }
+  }
+
+  .Btns {
+    height: 40px;
+  }
+
+  .Colors {
+    display: flex;
+    padding: 0px 42px;
+    align-items: baseline;
+    align-items: flex-end;
+    gap: 244px;
+    .Btns button {
+      gap: 15px;
+      width: 45px;
+    }
+    h2 {
+      padding: 0;
+    }
+  }
+
+  .progress-ring__circle {
+    margin: 0 auto;
+    transition: stroke-dashoffset 0.35s;
+    transform: rotate(0.25turn);
+    transform-origin: 43% 50%;
+    background-color: #161932;
+    color: #F87070;
+  }
+
+  button.ApplyBtn:hover {
+    background-color: #ffa4a4;
+    border: 2px solid #ffa4a4;
+  }
+
+  .tabs {
+    width: 373px;
+    padding: 8px 8px;
+    button {
+      width: 120px;
+    }
+  }
+}
