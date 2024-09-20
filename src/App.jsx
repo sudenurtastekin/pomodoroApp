@@ -175,7 +175,7 @@ export default function Counter() {
         strokeColor={themeColor}
       />
 
-      <button onClick={openModal} style={{background: 'unset', border: 'unset'}}><img src={Settings} /></button>
+      <button className='settingsBtn' onClick={openModal} style={{background: 'unset', border: 'unset'}}><img src={Settings} /></button>
       {isModal && (
         <div className={`ModalOverlay ${font}`} onClick={closeModal}>
           <div className="ModalContent" onClick={(e) => e.stopPropagation()}>

@@ -159,6 +159,13 @@ input {
   }
 }
 
+.settingsBtn{
+  cursor: pointer;
+}
+button{
+  cursor: pointer;
+}
+
 .ApplyBtn {
   background-color: #F87070;
   padding: 17px 47px;
